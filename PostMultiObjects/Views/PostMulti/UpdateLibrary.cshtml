@@ -1,0 +1,39 @@
+﻿
+
+@using PostMultiObjects.Controllers
+
+@{
+    ViewBag.Title = "UpdateLibrary";
+}
+
+<h2>UpdateLibrary</h2>
+
+@using (Html.BeginForm(actionName: nameof(PostMultiController.UpdateLibraryPost), controllerName: "PostMulti", method: FormMethod.Post))
+{
+    <input type="text" name="Name" value="Library name" />
+
+    <br /><br />
+
+    <input type="hidden" name="Books.Index" value="0" />
+    <input type="text" name="Books[0].Title" value="Curious George" /><br />
+    <input type="text" name="Books[0].Author" value="H.A. Rey" /><br />
+    <input type="text" name="Books[0].DatePublished" value="2/23/1973" /><br />
+
+    <br /><br />
+
+    <input type="hidden" name="Books.Index" value="1" />
+    <input type="text" name="Books[1].Title" value="Code Complete" /><br />
+    <input type="text" name="Books[1].Author" value="Steve McConnell" /><br />
+    <input type="text" name="Books[1].DatePublished" value="6/9/2004" /><br />
+
+    <br /><br />
+
+    <input type="hidden" name="Books.Index" value="2" />
+    <input type="text" name="Books[2].Title" value="The Two Towers" /><br />
+    <input type="text" name="Books[2].Author" value="JRR Tolkien" /><br />
+    <input type="text" name="Books[2].DatePublished" value="6/1/2005" /><br />
+
+    <br /><br />
+
+    <input type="submit" />
+}

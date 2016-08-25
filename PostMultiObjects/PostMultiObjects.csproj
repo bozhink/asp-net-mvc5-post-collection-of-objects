@@ -126,6 +126,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\Library.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -168,6 +169,8 @@
     <Content Include="Views\PostMulti\UpdateIntsPost.cshtml" />
     <Content Include="Views\PostMulti\UpdateProducts.cshtml" />
     <Content Include="Views\PostMulti\UpdateProductsPost.cshtml" />
+    <Content Include="Views\PostMulti\UpdateLibrary.cshtml" />
+    <Content Include="Views\PostMulti\UpdateLibraryPost.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

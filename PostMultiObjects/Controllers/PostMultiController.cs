@@ -28,15 +28,27 @@ namespace PostMultiObjects.Controllers
         }
 
         [HttpGet]
-        public ActionResult UpdateProducts(ICollection<Book> books)
+        public ActionResult UpdateProducts()
         {
-            return this.View(books);
+            return this.View();
         }
 
         [HttpPost]
         public ActionResult UpdateProductsPost(ICollection<Book> books)
         {
             return this.View(books);
+        }
+
+        [HttpGet]
+        public ActionResult UpdateLibrary()
+        {
+            return this.View();
+        }
+
+        [HttpPost]
+        public ActionResult UpdateLibraryPost(Library library)
+        {
+            return this.View(library);
         }
     }
 }
