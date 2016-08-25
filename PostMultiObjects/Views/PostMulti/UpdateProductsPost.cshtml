@@ -1,0 +1,40 @@
+﻿@model ICollection<PostMultiObjects.Models.Book>
+
+@{
+    ViewBag.Title = "UpdateProducts";
+}
+
+<h2>UpdateProducts</h2>
+
+<ul style="list-style: none">
+    @foreach (var book in Model)
+    {
+        <li>
+            <dl class="dl-horizontal">
+                <dt>
+                    @Html.LabelFor(b => book.Title)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(b => book.Title)
+                </dd>
+
+                <dt>
+                    @Html.LabelFor(b => book.Author)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(b => book.Author)
+                </dd>
+
+                <dt>
+                    @Html.LabelFor(b => book.DatePublished)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(b => book.DatePublished)
+                </dd>
+            </dl>
+        </li>
+    }
+</ul>

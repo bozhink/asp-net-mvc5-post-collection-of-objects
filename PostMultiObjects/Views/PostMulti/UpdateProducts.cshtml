@@ -1,0 +1,85 @@
+﻿@using PostMultiObjects.Controllers
+
+@{
+    ViewBag.Title = "UpdateProducts";
+}
+
+<h2>UpdateProducts</h2>
+
+@using (Html.BeginForm(actionName: nameof(PostMultiController.UpdateProductsPost), controllerName: "PostMulti", method: FormMethod.Post))
+{
+    <input type="text" name="[0].Title" value="Curious George" /><br />
+    <input type="text" name="[0].Author" value="H.A. Rey" /><br />
+    <input type="text" name="[0].DatePublished" value="2/23/1973" /><br />
+
+    <br /><br />
+
+    <input type="text" name="[1].Title" value="Code Complete" /><br />
+    <input type="text" name="[1].Author" value="Steve McConnell" /><br />
+    <input type="text" name="[1].DatePublished" value="6/9/2004" /><br />
+
+    <br /><br />
+
+    <input type="text" name="[2].Title" value="The Two Towers" /><br />
+    <input type="text" name="[2].Author" value="JRR Tolkien" /><br />
+    <input type="text" name="[2].DatePublished" value="6/1/2005" /><br />
+
+    <br /><br />
+
+    <input type="submit" />
+}
+
+<br /><br /><br /><br /><br /><br />
+
+@using (Html.BeginForm(actionName: nameof(PostMultiController.UpdateProductsPost), controllerName: "PostMulti", method: FormMethod.Post))
+{
+    <input type="text" name="books[0].Title" value="Curious George" /><br />
+    <input type="text" name="books[0].Author" value="H.A. Rey" /><br />
+    <input type="text" name="books[0].DatePublished" value="2/23/1973" /><br />
+
+    <br /><br />
+
+    <input type="text" name="books[1].Title" value="Code Complete" /><br />
+    <input type="text" name="books[1].Author" value="Steve McConnell" /><br />
+    <input type="text" name="books[1].DatePublished" value="6/9/2004" /><br />
+
+    <br /><br />
+
+    <input type="text" name="books[2].Title" value="The Two Towers" /><br />
+    <input type="text" name="books[2].Author" value="JRR Tolkien" /><br />
+    <input type="text" name="books[2].DatePublished" value="6/1/2005" /><br />
+
+    <br /><br />
+
+    <input type="submit" />
+}
+
+
+<br /><br /><br /><br /><br /><br />
+
+@using (Html.BeginForm(actionName: nameof(PostMultiController.UpdateProductsPost), controllerName: "PostMulti", method: FormMethod.Post))
+{
+    <input type="hidden" name="books.Index" value="zero" />
+    <input type="text" name="books[zero].Title" value="Curious George" /><br />
+    <input type="text" name="books[zero].Author" value="H.A. Rey" /><br />
+    <input type="text" name="books[zero].DatePublished" value="2/23/1973" /><br />
+
+    <br /><br />
+
+    <input type="hidden" name="books.Index" value="one" />
+    <input type="text" name="books[one].Title" value="Code Complete" /><br />
+    <input type="text" name="books[one].Author" value="Steve McConnell" /><br />
+    <input type="text" name="books[one].DatePublished" value="6/9/2004" /><br />
+
+    <br /><br />
+
+    <input type="hidden" name="books.Index" value="two" />
+    <input type="text" name="books[two].Title" value="The Two Towers" /><br />
+    <input type="text" name="books[two].Author" value="JRR Tolkien" /><br />
+    <input type="text" name="books[two].DatePublished" value="6/1/2005" /><br />
+
+    <br /><br />
+
+    <input type="submit" />
+}
+
