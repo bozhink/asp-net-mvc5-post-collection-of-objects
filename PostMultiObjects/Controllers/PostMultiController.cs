@@ -1,16 +1,12 @@
-﻿using PostMultiObjects.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-
-
-/// <summary>
+﻿/// <summary>
 /// See http://haacked.com/archive/2008/10/23/model-binding-to-a-list.aspx/
 /// </summary>
 namespace PostMultiObjects.Controllers
 {
+    using System.Collections.Generic;
+    using System.Web.Mvc;
+    using Models;
+
     public class PostMultiController : Controller
     {
         // GET: PostMulti

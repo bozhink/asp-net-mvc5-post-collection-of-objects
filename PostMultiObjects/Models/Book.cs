@@ -1,7 +1,7 @@
-﻿using System;
-
-namespace PostMultiObjects.Models
+﻿namespace PostMultiObjects.Models
 {
+    using System;
+
     public class Book
     {
         public string Title { get; set; }
